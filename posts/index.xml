@@ -4,12 +4,20 @@
         <link>https://example.com/posts/</link>
         <description>所有Posts | 学习博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>区块链Aptos入门视频教程-基本概念</title>
+    <title>区块链Aptos入门教程</title>
     <link>https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
     <pubDate>Fri, 05 Aug 2022 21:40:32 &#43;0800</pubDate>
     <author>学习记录者</author>
     <guid>https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[雪崩网络Avax概述]]></description>
+    <description><![CDATA[[toc] Aptos公链简介 Aptos是由 Diem 原团队成员成立的新公链项目. Aptos的目标是建立一个更具可扩展性的区块链，使用Move编程语言以及BF]]></description>
+</item>
+<item>
+    <title>雪崩网络Avax概述</title>
+    <link>https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/</link>
+    <pubDate>Fri, 05 Aug 2022 21:40:32 &#43;0800</pubDate>
+    <author>学习记录者</author>
+    <guid>https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/</guid>
+    <description><![CDATA[概述 Avalanche是一个开源平台，用于在一个可互操作、高度可扩展的生态系统中启动去中心化应用程序和企业区块链。Avalanche 是第一个]]></description>
 </item>
 <item>
     <title>雪崩网络Avax概述</title>
@@ -74,14 +82,6 @@
     <author>Dillon</author>
     <guid>https://example.com/posts/defi/images/</guid>
     <description><![CDATA[探索 Hugo - LoveIt 主题的全部内容和背后的核心概念.]]></description>
-</item>
-<item>
-    <title>主题文档 - 基本概念</title>
-    <link>https://example.com/posts/theme-documentation-basics/</link>
-    <pubDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>https://example.com/posts/theme-documentation-basics/</guid>
-    <description><![CDATA[<p>探索 Hugo - <strong>LoveIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
 </item>
 </channel>
 </rss>
