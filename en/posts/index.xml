@@ -1,10 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - 给投资人讲的区块链</title>
+        <title>All Posts - 学习博客</title>
         <link>https://example.com/en/posts/</link>
-        <description>All Posts | 给投资人讲的区块链</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>823743856@qq.com (给投资人讲的区块链)</managingEditor>
-            <webMaster>823743856@qq.com (给投资人讲的区块链)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</lastBuildDate><atom:link href="https://example.com/en/posts/" rel="self" type="application/rss+xml" /><item>
+        <description>All Posts | 学习博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</lastBuildDate><atom:link href="https://example.com/en/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Theme Documentation - Basics</title>
     <link>https://example.com/en/posts/theme-documentation-basics/</link>
     <pubDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</pubDate>
