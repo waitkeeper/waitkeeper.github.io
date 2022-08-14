@@ -2,7 +2,115 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/en/posts/theme-documentation-basics/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-basics/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-basics/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-content/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-content/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-content/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-built-in-shortcodes/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-built-in-shortcodes/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-built-in-shortcodes/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-extended-shortcodes/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-extended-shortcodes/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-extended-shortcodes/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/basic-markdown-syntax/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/basic-markdown-syntax/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/basic-markdown-syntax/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-mermaid-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-mermaid-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-mermaid-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/emoji-support/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/emoji-support/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/emoji-support/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-echarts-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-echarts-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-echarts-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-mapbox-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-mapbox-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-mapbox-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-music-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-music-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-music-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-bilibili-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-bilibili-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-bilibili-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/theme-documentation-typeit-shortcode/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/theme-documentation-typeit-shortcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/theme-documentation-typeit-shortcode/"
+                    /></url><url>
+            <loc>https://example.com/en/categories/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://example.com/categories/"
@@ -11,7 +119,43 @@
                     hreflang="en"
                     href="https://example.com/en/categories/"
                     /></url><url>
-            <loc>https://example.com/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/en/tags/configuration/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/configuration/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/configuration/"
+                    /></url><url>
+            <loc>https://example.com/en/categories/documentation/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/categories/documentation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/categories/documentation/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/installation/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/installation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/installation/"
+                    /></url><url>
+            <loc>https://example.com/en/posts/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/posts/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://example.com/tags/"
@@ -20,7 +164,7 @@
                     hreflang="en"
                     href="https://example.com/en/tags/"
                     /></url><url>
-            <loc>https://example.com/en/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/en/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://example.com/"
@@ -28,4 +172,58 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://example.com/en/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/content/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/content/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/content/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/markdown/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/markdown/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/markdown/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/shortcodes/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/shortcodes/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/shortcodes/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/html/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/html/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/html/"
+                    /></url><url>
+            <loc>https://example.com/en/categories/markdown/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/categories/markdown/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/categories/markdown/"
+                    /></url><url>
+            <loc>https://example.com/en/tags/emoji/</loc><lastmod>2022-08-14T12:35:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://example.com/tags/emoji/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/en/tags/emoji/"
                     /></url></urlset>

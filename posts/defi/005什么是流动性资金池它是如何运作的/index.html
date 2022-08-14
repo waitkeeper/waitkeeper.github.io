@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>什么是流动性资金池，它入如何运作的？ - 给投资人讲的区块链</title><meta name="Description" content="什么是流动资金池？它们是如何工作的？为什么我们在去中心化金融中甚至需要它们？此外，跨不同协议（如 Uniswap、Balancer 或 Curve）的流动性池之间有什么区别？我们将在本文中介绍所有这些。"><meta property="og:title" content="什么是流动性资金池，它入如何运作的？" />
+<meta property="og:description" content="什么是流动资金池？它们是如何工作的？为什么我们在去中心化金融中甚至需要它们？此外，跨不同协议（如 Uniswap、Balancer 或 Curve）的流动性池之间有什么区别？我们将在本文中介绍所有这些。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-15T21:40:32+08:00" />
+<meta property="article:modified_time" content="2021-07-15T21:40:32+08:00" /><meta property="og:site_name" content="LoveIt" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/logo.png"/>
+
+<meta name="twitter:title" content="什么是流动性资金池，它入如何运作的？"/>
+<meta name="twitter:description" content="什么是流动资金池？它们是如何工作的？为什么我们在去中心化金融中甚至需要它们？此外，跨不同协议（如 Uniswap、Balancer 或 Curve）的流动性池之间有什么区别？我们将在本文中介绍所有这些。"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" /><link rel="prev" href="https://example.com/posts/defi/004%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E6%8C%96%E7%9F%BFdefi%E8%A7%A3%E9%87%8A/" /><link rel="next" href="https://example.com/posts/ethereum/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E7%8A%B6%E6%80%81%E6%A0%91/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "什么是流动性资金池，它入如何运作的？",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/posts\/defi\/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "去中心化金融, DEFI","wordcount":  2239 ,
+        "url": "https:\/\/example.com\/posts\/defi\/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84\/","datePublished": "2021-07-15T21:40:32+08:00","dateModified": "2021-07-15T21:40:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "给投资人讲的区块链"
+            },"description": "什么是流动资金池？它们是如何工作的？为什么我们在去中心化金融中甚至需要它们？此外，跨不同协议（如 Uniswap、Balancer 或 Curve）的流动性池之间有什么区别？我们将在本文中介绍所有这些。"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="给投资人讲的区块链"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>LoveIt</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="给投资人讲的区块链"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>LoveIt</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">什么是流动性资金池，它入如何运作的？</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>给投资人讲的区块链</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>去中心化金融</a>&nbsp;<a href="/categories/defi/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DEFI</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-07-15">2021-07-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2239 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 5 分钟&nbsp;<span id="/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" class="leancloud_visitors" data-flag-title="什么是流动性资金池，它入如何运作的？">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#流动性资金池">流动性资金池</a></li>
+    <li><a href="#为什么-defi-需要流动性池">为什么 DeFi 需要流动性池？</a>
+      <ul>
+        <li><a href="#为什么去中心化金融defi不能仿造这种机制呢">为什么去中心化金融(DeFi)不能仿造这种机制呢？</a></li>
+        <li><a href="#那第二层协议可以解决这个问题吗">那第二层协议可以解决这个问题吗？</a></li>
+      </ul>
+    </li>
+    <li><a href="#流动性池是怎么运作的呢">流动性池是怎么运作的呢？</a></li>
+    <li><a href="#有哪些潜在风险">有哪些潜在风险？</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="流动性资金池">流动性资金池</h2>
+<p>流动性池（LIQUIDITY POOL）指的是一池被锁在智能合约内的代币。它们借由提供流动性来促进交易。这些流动性池会被去中心化交易平台（DEX）所运用。最早采用流动性池的是 Bancor，但真正让它流行起来的是 Uniswap。</p>
+<p>在我们解释流动性池是如何在其中运作，以及 AMM（自动化做市商）是什么之前，先让我们了解为什么需要它？</p>
+<h2 id="为什么-defi-需要流动性池">为什么 DeFi 需要流动性池？</h2>
+<p>如果你熟知像是 Coinbase 或是 Binance 这样的交易平台，你会知道，那里的交易是基于订单簿模型（order book model）。这跟传统股票市场一样，像是纽交所（NYSE）还有纳斯达克（Nasdaq）。</p>
+<p>在这些订单簿模型市场中，买家和卖家会各自制定他们的订单。买家（又称 BIDDERS，投标人）期望用最低价买到想要的资产，而卖家则是期望用最高价卖出同一项资产。</p>
+<p>因此，交易要成立，买卖双方必须要在价格上达到共识。交易可能在两种情况发生，一是买家提高投标价，二是卖家降价出售。</p>
+<p>但若是没有人愿意重新出价怎么办？又或者你想买的币数量不够怎么办？</p>
+<p>这时候，必须依靠做市商（market maker）的参与了。简单来说，做市商是一个促进交易的实体，它会一直接受买单与卖单，借此提供流动性（Liquidity）。因此，用户可以不需要等待对手方出现才能交易。</p>
+<h3 id="为什么去中心化金融defi不能仿造这种机制呢">为什么去中心化金融(DeFi)不能仿造这种机制呢？</h3>
+<p>其实是可以的。只是它会变得又慢、又贵，而且还很难用。主要原因是，订单簿模型相当依赖做市商，要有很多个做市商，针对某项资产一直不断地做市。若是没有做市商，交易所会立刻变得不具流动性。对于一般用户来说，就会变得很难用。</p>
+<p>除此之外，做市商需要一直追踪现时价格，并持续改变他们的出价，然后会有庞大数量的订单发向交易所。</p>
+<p>以太坊每秒可以处理 12~15 笔交易，出块时间在 10~19 秒间，这对于订单簿交易所来说，并不是一个可行的选项。每笔与智能合约互动的交易，都会需要 Gas Fee（可视为手续费）。做市商光是提出订单，就可能让他们破产。</p>
+<h3 id="那第二层协议可以解决这个问题吗">那第二层协议可以解决这个问题吗？</h3>
+<p>有些第二层协议，像是 Loopring（路印协议）看起来蛮可靠的，但就算是他们，仍然依赖着做市商，而同样会面临流动性问题。不仅如此，如果有用户想要做一笔交易，在第二层协议出入金，还必须多经过两道手续。</p>
+<p>这也是为什么要发明新东西，让它在去中心化的世界更加流畅运作的理由。而这就是为什么需要流动性池的原因了。</p>
+<h2 id="流动性池是怎么运作的呢">流动性池是怎么运作的呢？</h2>
+<p>一般来说，一个流动性池会有两种代币，这两种代币形成一个新的交易对市场。DAI / ETH 可以作为一个很好的流动性池范例，它在 Uniswap 上相当受欢迎。</p>
+<p>当一个新的流动性池被创建时，第一个流动性提供者（Liquidity Provider，LP）会设定在池中的初始价格，LP 会被驱使着让池中的两种资产维持等价值。如果池中的初始价格，与全球市场价格脱节，那就会立即产生一个套利空间，让 LP 损失资金。对于后续加入资金池的 LP 来说，同样会面临这样的风险。</p>
+<p>当流动性池获得流动性时（可理解为注入资金），LP 会获得一个特殊的 LP 代币，代表着他们提供了多少比例的流动性。</p>
+<p>当交易是由此流动性池所促进时，0.3 % 的交易费用会按照比例分给所有 LP 代币的持有者。如果 LP 想要抽回他们提供的流动性资金，其所代表的 LP 代币就必须被销毁。</p>
+<p>每次有 LP 代币被销毁，就会根据确定性算法（Deterministic algorithm）启动价格调整，这样的机制，也就是自动化做市商（Automated Market Maker, AMM）。</p>
+<p>而在每一种不同的协议中，他们所用的 AMM 算法都有些不一样。基础流动性池（basic liquidity pool），像是 Uniswap，使用的是<strong>恒定乘积做市商算法（constant product market maker algorithm）：ｘ* y = k</strong>，让 x 代币数量与 y 代币数量的乘积，永远等于常数 k。</p>
+<p>正因为这样的演算法，流动性池可以永远提供流动性，无论交易多大。主要是因为，当某代币的需求增加时，这个算法会一直增加它的价格。</p>
+<p><strong>这种流动性池的重点在于，代币的比例支配着价格。</strong></p>
+<p>举例而言，在 DAI / ETH 的池子中投入 DAI 买入 ETH，就会造成 ETH 的价格上升，而 DAI 的价格会下降。</p>
+<p>**价格移动的幅度，则是依据交易的大小、池子的大小而定。越大的池子，就能承受越大的交易量，对价格的冲击也比较小（也就是所谓的滑价 Slippage）。**总之，越大的池子可以乘载越大的交易，而且产生的滑价比较小。</p>
+<p>因为大池子滑价比较小，可以带来更好的交易体验。有些协议，像是 Balancer，开始给予 LP 更多的奖励，以吸引流动性，这样的过程，就叫做「流动性挖矿」（liquidity mining）。流动性池、自动化做市商的概念很简单，但也很有用。如果我们不用中心化的订单簿，那我们就不需要做市商的外部支持。</p>
+<p>上述的流动性池机制，被用于 Uniswap，他们是最基础的流动性池。其他流动性池复制了这样的概念，并且加入了一些有趣的想法。</p>
+<p>像是 Curve，他们发现 Uniswap 的 AMM 机制，在两种价格相近的资产间，运作的并不顺利。像是稳定币，或是同一种代币的衍生产品（像是 WETH / SETH）。Curve 池子的演算法，在交易这一类型代币时，可以提供更低的手续费，还有滑价也会更低。</p>
+<p>还有另外一种流动性池的例子 – Balancer，他们发现我们不需要把池子里的资产限制为两种。 Balancer 容许一个池子内可以至多放入八种资产。</p>
+<h2 id="有哪些潜在风险">有哪些潜在风险？</h2>
+<p>典型的 DeFi 风险就是智能合约的漏洞、管理者密钥，还有系统性风险。还有就是暂时性损失（impermanent loss）跟流动性池骇客。这些内容都会在之后的影片中继续说明，链新闻也会同步追踪。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-07-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" data-title="什么是流动性资金池，它入如何运作的？" data-hashtags="去中心化金融,DEFI"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" data-hashtag="去中心化金融"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" data-title="什么是流动性资金池，它入如何运作的？"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" data-title="什么是流动性资金池，它入如何运作的？"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/posts/defi/005%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B5%84%E9%87%91%E6%B1%A0%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/" data-title="什么是流动性资金池，它入如何运作的？" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D/">去中心化金融</a>,&nbsp;<a href="/tags/defi/">DEFI</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/defi/004%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%81%E5%8A%A8%E6%80%A7%E6%8C%96%E7%9F%BFdefi%E8%A7%A3%E9%87%8A/" class="prev" rel="prev" title="什么是流动性挖矿？"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>什么是流动性挖矿？</a>
+            <a href="/posts/ethereum/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E7%8A%B6%E6%80%81%E6%A0%91/" class="next" rel="next" title="以太坊源码分析-状态树">以太坊源码分析-状态树<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">给投资人讲的区块链</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
