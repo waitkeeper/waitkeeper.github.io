@@ -1,6 +1,5 @@
 # 区块链Aptos入门教程
 
-[toc]
 
 # Aptos公链简介
 

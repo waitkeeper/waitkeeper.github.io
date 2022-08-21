@@ -9,7 +9,7 @@
     <pubDate>Fri, 05 Aug 2022 21:40:32 &#43;0800</pubDate>
     <author>学习记录者</author>
     <guid>https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[[toc] Aptos公链简介 Aptos是由 Diem 原团队成员成立的新公链项目. Aptos的目标是建立一个更具可扩展性的区块链，使用Move编程语言以及BF]]></description>
+    <description><![CDATA[Aptos公链简介 Aptos是由 Diem 原团队成员成立的新公链项目. Aptos的目标是建立一个更具可扩展性的区块链，使用Move编程语言以及BFT]]></description>
 </item>
 <item>
     <title>雪崩网络Avax概述</title>
@@ -26,6 +26,14 @@
     <author>学习记录者</author>
     <guid>https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0/</guid>
     <description><![CDATA[概述 Avalanche是一个开源平台，用于在一个可互操作、高度可扩展的生态系统中启动去中心化应用程序和企业区块链。Avalanche 是第一个]]></description>
+</item>
+<item>
+    <title>NFT的真实使用场景</title>
+    <link>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
+    <pubDate>Sun, 31 Jul 2022 01:40:32 &#43;0800</pubDate>
+    <author>学习记录者</author>
+    <guid>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
+    <description><![CDATA[NFT的真实使用场景]]></description>
 </item>
 <item>
     <title>以太坊源码分析-状态树</title>
@@ -74,14 +82,6 @@
     <author>学习记录者</author>
     <guid>https://example.com/posts/defi/001%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/</guid>
     <description><![CDATA[去中心化金融（DeFi）提升指南 如果您想了解去中心化金融 (DeFi)？或者想将 DeFi 提升一个水平？无论您处于 DeFi 的哪个阶段，本系列教程都适合您。 说]]></description>
-</item>
-<item>
-    <title>主题文档 - 基本概念</title>
-    <link>https://example.com/posts/defi/images/</link>
-    <pubDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>https://example.com/posts/defi/images/</guid>
-    <description><![CDATA[探索 Hugo - LoveIt 主题的全部内容和背后的核心概念.]]></description>
 </item>
 </channel>
 </rss>
