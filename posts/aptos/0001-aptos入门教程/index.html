@@ -19,7 +19,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" /><link rel="prev" href="https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" /><link rel="prev" href="https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/" /><link rel="next" href="https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -121,188 +121,195 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#账号accounts">账号（Accounts）</a>
+    <li><a href="#aptos公链简介">Aptos公链简介</a></li>
+    <li><a href="#1-基本概念">1 基本概念</a>
       <ul>
-        <li><a href="#初始化帐号">初始化帐号</a></li>
-        <li><a href="#认证密钥">认证密钥</a>
+        <li><a href="#账号accounts">账号（Accounts）</a>
           <ul>
-            <li><a href="#单一签名验证">单一签名验证</a></li>
-            <li><a href="#多重签名验证">多重签名验证</a></li>
-          </ul>
-        </li>
-        <li><a href="#帐号资源">帐号资源</a></li>
-      </ul>
-    </li>
-    <li><a href="#事件events">事件（Events）</a></li>
-    <li><a href="#全节点fullnodes">全节点（FullNodes）</a></li>
-    <li><a href="#gas和交易費">Gas和交易費</a>
-      <ul>
-        <li><a href="#资源使用类型">资源使用类型</a></li>
-        <li><a href="#用gas计算交易费用">用gas计算交易费用</a></li>
-        <li><a href="#用gas改变交易执行的优先级">用gas改变交易执行的优先级</a></li>
-        <li><a href="#核心设计原则">核心设计原则</a></li>
-      </ul>
-    </li>
-    <li><a href="#证明proof">证明（Proof）</a></li>
-    <li><a href="#节点网络与同步">节点网络与同步</a>
-      <ul>
-        <li><a href="#节点网络拓扑">节点网络拓扑</a></li>
-        <li><a href="#独立的网络栈">独立的网络栈</a></li>
-        <li><a href="#节点同步">节点同步</a></li>
-        <li><a href="#状态同步器">状态同步器</a></li>
-        <li><a href="#同步api">同步API</a></li>
-      </ul>
-    </li>
-    <li><a href="#交易与状态">交易与状态</a>
-      <ul>
-        <li><a href="#transactions">Transactions</a></li>
-        <li><a href="#账本状态">账本状态</a></li>
-        <li><a href="#版本化数据库">版本化数据库</a></li>
-        <li><a href="#交易改变状态">交易改变状态</a></li>
-      </ul>
-    </li>
-    <li><a href="#验证器节点">验证器节点</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#交易的生命周期">交易的生命周期</a>
-      <ul>
-        <li><a href="#假定前提">假定前提</a></li>
-        <li><a href="#客户端构建并提交一笔交易">客户端构建并提交一笔交易</a></li>
-        <li><a href="#交易的生命周期-1">交易的生命周期</a>
-          <ul>
-            <li><a href="#stage1接受客户端的交易">Stage1：接受客户端的交易</a></li>
-            <li><a href="#stage2其他验证器节点共享交易">Stage2：其他验证器节点共享交易</a></li>
-            <li><a href="#stage3提出区块proposing-the-block">Stage3：提出区块（Proposing the block）</a></li>
-            <li><a href="#stage4执行区块并达成共识">Stage4：执行区块并达成共识</a></li>
-            <li><a href="#stage5区块上链">Stage5：区块上链</a></li>
-          </ul>
-        </li>
-        <li><a href="#aptos节点内相关组件之间的交互">Aptos节点内相关组件之间的交互</a>
-          <ul>
-            <li><a href="#rest-service">REST Service</a>
+            <li><a href="#初始化帐号">初始化帐号</a></li>
+            <li><a href="#认证密钥">认证密钥</a>
               <ul>
-                <li><a href="#1client--rest-service">1.Client → REST Service</a></li>
-                <li><a href="#2rest-service--mempool">2.REST Service → Mempool</a></li>
-                <li><a href="#3-rest-service--storage">3. REST Service → Storage</a></li>
+                <li><a href="#单一签名验证">单一签名验证</a></li>
+                <li><a href="#多重签名验证">多重签名验证</a></li>
               </ul>
             </li>
-            <li><a href="#virtual-machinevm">Virtual Machine(VM)</a>
+            <li><a href="#帐号资源">帐号资源</a></li>
+          </ul>
+        </li>
+        <li><a href="#事件events">事件（Events）</a></li>
+        <li><a href="#全节点fullnodes">全节点（FullNodes）</a></li>
+        <li><a href="#gas和交易費">Gas和交易費</a>
+          <ul>
+            <li><a href="#资源使用类型">资源使用类型</a></li>
+            <li><a href="#用gas计算交易费用">用gas计算交易费用</a></li>
+            <li><a href="#用gas改变交易执行的优先级">用gas改变交易执行的优先级</a></li>
+            <li><a href="#核心设计原则">核心设计原则</a></li>
+          </ul>
+        </li>
+        <li><a href="#证明proof">证明（Proof）</a></li>
+        <li><a href="#节点网络与同步">节点网络与同步</a>
+          <ul>
+            <li><a href="#节点网络拓扑">节点网络拓扑</a></li>
+            <li><a href="#独立的网络栈">独立的网络栈</a></li>
+            <li><a href="#节点同步">节点同步</a></li>
+            <li><a href="#状态同步器">状态同步器</a></li>
+            <li><a href="#同步api">同步API</a></li>
+          </ul>
+        </li>
+        <li><a href="#交易与状态">交易与状态</a>
+          <ul>
+            <li><a href="#transactions">Transactions</a></li>
+            <li><a href="#账本状态">账本状态</a></li>
+            <li><a href="#版本化数据库">版本化数据库</a></li>
+            <li><a href="#交易改变状态">交易改变状态</a></li>
+          </ul>
+        </li>
+        <li><a href="#验证器节点">验证器节点</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-交易transactions">2 交易（Transactions）</a>
+      <ul>
+        <li><a href="#交易的生命周期">交易的生命周期</a>
+          <ul>
+            <li><a href="#假定前提">假定前提</a></li>
+            <li><a href="#客户端构建并提交一笔交易">客户端构建并提交一笔交易</a></li>
+            <li><a href="#交易的生命周期-1">交易的生命周期</a>
               <ul>
-                <li><a href="#1virtual-machine--storage">1.Virtual Machine → Storage</a></li>
-                <li><a href="#2-execution--virtual-machine">2. Execution → Virtual Machine</a></li>
-                <li><a href="#3-mempool--virtual-machine">3. Mempool → Virtual Machine</a></li>
+                <li><a href="#stage1接受客户端的交易">Stage1：接受客户端的交易</a></li>
+                <li><a href="#stage2其他验证器节点共享交易">Stage2：其他验证器节点共享交易</a></li>
+                <li><a href="#stage3提出区块proposing-the-block">Stage3：提出区块（Proposing the block）</a></li>
+                <li><a href="#stage4执行区块并达成共识">Stage4：执行区块并达成共识</a></li>
+                <li><a href="#stage5区块上链">Stage5：区块上链</a></li>
               </ul>
             </li>
-            <li><a href="#mempool">Mempool</a>
+            <li><a href="#aptos节点内相关组件之间的交互">Aptos节点内相关组件之间的交互</a>
               <ul>
-                <li><a href="#1-rest-service--mempool">1. REST Service → Mempool</a></li>
-                <li><a href="#2-mempool--other-validator-nodes">2. Mempool → Other validator nodes</a></li>
-                <li><a href="#3-consensus--mempool">3. Consensus → Mempool</a></li>
-                <li><a href="#4-mempool--vm">4. Mempool → VM</a></li>
+                <li><a href="#rest-service">REST Service</a>
+                  <ul>
+                    <li><a href="#1client--rest-service">1.Client → REST Service</a></li>
+                    <li><a href="#2rest-service--mempool">2.REST Service → Mempool</a></li>
+                    <li><a href="#3-rest-service--storage">3. REST Service → Storage</a></li>
+                  </ul>
+                </li>
+                <li><a href="#virtual-machinevm">Virtual Machine(VM)</a>
+                  <ul>
+                    <li><a href="#1virtual-machine--storage">1.Virtual Machine → Storage</a></li>
+                    <li><a href="#2-execution--virtual-machine">2. Execution → Virtual Machine</a></li>
+                    <li><a href="#3-mempool--virtual-machine">3. Mempool → Virtual Machine</a></li>
+                  </ul>
+                </li>
+                <li><a href="#mempool">Mempool</a>
+                  <ul>
+                    <li><a href="#1-rest-service--mempool">1. REST Service → Mempool</a></li>
+                    <li><a href="#2-mempool--other-validator-nodes">2. Mempool → Other validator nodes</a></li>
+                    <li><a href="#3-consensus--mempool">3. Consensus → Mempool</a></li>
+                    <li><a href="#4-mempool--vm">4. Mempool → VM</a></li>
+                  </ul>
+                </li>
+                <li><a href="#consensus">Consensus</a>
+                  <ul>
+                    <li><a href="#1-consensus--mempool">1. Consensus → Mempool</a></li>
+                    <li><a href="#2-consensus--other-validators">2. Consensus → Other Validators</a></li>
+                    <li><a href="#3-consensus--execution-consensus--other-validators">3. Consensus → Execution, Consensus → Other Validators</a></li>
+                    <li><a href="#4-consensus--execution">4. Consensus → Execution</a></li>
+                    <li><a href="#1-consensus--execution">1. Consensus → Execution</a></li>
+                    <li><a href="#2-execution--vm">2. Execution → VM</a></li>
+                    <li><a href="#3-consensus--execution">3. Consensus → Execution</a></li>
+                    <li><a href="#4-execution--storage">4. Execution → Storage</a></li>
+                  </ul>
+                </li>
+                <li><a href="#storage">Storage</a>
+                  <ul>
+                    <li><a href="#1-vm--storage">1. VM → Storage</a></li>
+                    <li><a href="#2-execution--storage">2. Execution → Storage</a></li>
+                    <li><a href="#3-execution--storage">3. Execution → Storage</a></li>
+                    <li><a href="#4rest-service--storage">4.REST Service → Storage</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li><a href="#consensus">Consensus</a>
-              <ul>
-                <li><a href="#1-consensus--mempool">1. Consensus → Mempool</a></li>
-                <li><a href="#2-consensus--other-validators">2. Consensus → Other Validators</a></li>
-                <li><a href="#3-consensus--execution-consensus--other-validators">3. Consensus → Execution, Consensus → Other Validators</a></li>
-                <li><a href="#4-consensus--execution">4. Consensus → Execution</a></li>
-                <li><a href="#1-consensus--execution">1. Consensus → Execution</a></li>
-                <li><a href="#2-execution--vm">2. Execution → VM</a></li>
-                <li><a href="#3-consensus--execution">3. Consensus → Execution</a></li>
-                <li><a href="#4-execution--storage">4. Execution → Storage</a></li>
-              </ul>
-            </li>
-            <li><a href="#storage">Storage</a>
-              <ul>
-                <li><a href="#1-vm--storage">1. VM → Storage</a></li>
-                <li><a href="#2-execution--storage">2. Execution → Storage</a></li>
-                <li><a href="#3-execution--storage">3. Execution → Storage</a></li>
-                <li><a href="#4rest-service--storage">4.REST Service → Storage</a></li>
-              </ul>
-            </li>
+          </ul>
+        </li>
+        <li><a href="#与aptos区块链交互">与Aptos区块链交互</a>
+          <ul>
+            <li><a href="#发送和接收testcoin代币">发送和接收TestCoin代币</a></li>
+            <li><a href="#创建一个新账号">创建一个新账号</a></li>
+            <li><a href="#发布一个新的move模块">发布一个新的Move模块</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#与aptos区块链交互">与Aptos区块链交互</a>
+    <li><a href="#3-上手指南tutorials">3 上手指南（Tutorials）</a>
       <ul>
-        <li><a href="#发送和接收testcoin代币">发送和接收TestCoin代币</a></li>
-        <li><a href="#创建一个新账号">创建一个新账号</a></li>
-        <li><a href="#发布一个新的move模块">发布一个新的Move模块</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#发起第一笔转账交易">发起第一笔转账交易</a>
-      <ul>
-        <li><a href="#第1步创建帐号">第1步：创建帐号</a></li>
-        <li><a href="#第2步rest-api接口">第2步：REST API接口</a>
+        <li><a href="#发起第一笔转账交易">发起第一笔转账交易</a>
           <ul>
-            <li><a href="#21-读取帐号信息">2.1 读取帐号信息</a></li>
-            <li><a href="#22-向链上提交一笔交易">2.2 向链上提交一笔交易</a></li>
-            <li><a href="#23-应用程序逻辑">2.3 应用程序逻辑</a></li>
-          </ul>
-        </li>
-        <li><a href="#第3步水龙头接口">第3步：水龙头接口</a></li>
-        <li><a href="#第4步执行应用程序并验证执行结果">第4步：执行应用程序并验证执行结果</a></li>
-      </ul>
-    </li>
-    <li><a href="#第一个move模块">第一个Move模块</a>
-      <ul>
-        <li><a href="#第1步编写和测试move模块">第1步：编写和测试Move模块</a>
-          <ul>
-            <li><a href="#11-准备aptos源码和开发环境">1.1 准备aptos源码和开发环境</a></li>
-            <li><a href="#12-move模块代码">1.2 Move模块代码</a></li>
-            <li><a href="#13-测试move模块">1.3 测试Move模块</a></li>
-          </ul>
-        </li>
-        <li><a href="#第2步move模块的发布与交互">第2步：Move模块的发布与交互</a>
-          <ul>
-            <li><a href="#21-将move模块发布到链上">2.1 将Move模块发布到链上</a></li>
-            <li><a href="#22-读取用户的messageholder资源">2.2 读取用户的MessageHolder资源</a></li>
-            <li><a href="#23-修改资源">2.3 修改资源</a></li>
-          </ul>
-        </li>
-        <li><a href="#第3步move模块的初始化和交互">第3步：Move模块的初始化和交互</a></li>
-      </ul>
-    </li>
-    <li><a href="#运行本地测试网">运行本地测试网</a>
-      <ul>
-        <li><a href="#准备aptos开发环境">准备aptos开发环境</a></li>
-        <li><a href="#启动节点">启动节点</a></li>
-        <li><a href="#使用docker">使用Docker</a></li>
-        <li><a href="#与本地测试验证网络交互">与本地测试验证网络交互</a></li>
-      </ul>
-    </li>
-    <li><a href="#运行全节点">运行全节点</a>
-      <ul>
-        <li><a href="#硬件需求">硬件需求</a></li>
-        <li><a href="#源码方式">源码方式</a></li>
-        <li><a href="#启动节点-1">启动节点</a></li>
-        <li><a href="#docker方式">Docker方式</a></li>
-        <li><a href="#理解和验证节点正确性">理解和验证节点正确性</a>
-          <ul>
-            <li><a href="#初始同步">初始同步</a>
+            <li><a href="#第1步创建帐号">第1步：创建帐号</a></li>
+            <li><a href="#第2步rest-api接口">第2步：REST API接口</a>
               <ul>
-                <li><a href="#查询节点同步情况">查询节点同步情况</a></li>
-                <li><a href="#查看连接数">查看连接数</a></li>
-                <li><a href="#查看账本数据库大小">查看账本数据库大小</a></li>
+                <li><a href="#21-读取帐号信息">2.1 读取帐号信息</a></li>
+                <li><a href="#22-向链上提交一笔交易">2.2 向链上提交一笔交易</a></li>
+                <li><a href="#23-应用程序逻辑">2.3 应用程序逻辑</a></li>
               </ul>
             </li>
-            <li><a href="#添加上游种子节点">添加上游种子节点</a></li>
+            <li><a href="#第3步水龙头接口">第3步：水龙头接口</a></li>
+            <li><a href="#第4步执行应用程序并验证执行结果">第4步：执行应用程序并验证执行结果</a></li>
           </ul>
         </li>
-        <li><a href="#高级指南">高级指南</a>
+        <li><a href="#第一个move模块">第一个Move模块</a>
           <ul>
-            <li><a href="#为全节点创建静态id">为全节点创建静态ID</a></li>
-            <li><a href="#用静态网络id启动节点">用静态网络ID启动节点</a></li>
-            <li><a href="#让其他全节点连接到自己的节点">让其他全节点连接到自己的节点</a></li>
+            <li><a href="#第1步编写和测试move模块">第1步：编写和测试Move模块</a>
+              <ul>
+                <li><a href="#11-准备aptos源码和开发环境">1.1 准备aptos源码和开发环境</a></li>
+                <li><a href="#12-move模块代码">1.2 Move模块代码</a></li>
+                <li><a href="#13-测试move模块">1.3 测试Move模块</a></li>
+              </ul>
+            </li>
+            <li><a href="#第2步move模块的发布与交互">第2步：Move模块的发布与交互</a>
+              <ul>
+                <li><a href="#21-将move模块发布到链上">2.1 将Move模块发布到链上</a></li>
+                <li><a href="#22-读取用户的messageholder资源">2.2 读取用户的MessageHolder资源</a></li>
+                <li><a href="#23-修改资源">2.3 修改资源</a></li>
+              </ul>
+            </li>
+            <li><a href="#第3步move模块的初始化和交互">第3步：Move模块的初始化和交互</a></li>
           </ul>
         </li>
-        <li><a href="#使用最新devnet版本更新全节点">使用最新devnet版本更新全节点</a></li>
+        <li><a href="#运行本地测试网">运行本地测试网</a>
+          <ul>
+            <li><a href="#准备aptos开发环境">准备aptos开发环境</a></li>
+            <li><a href="#启动节点">启动节点</a></li>
+            <li><a href="#使用docker">使用Docker</a></li>
+            <li><a href="#与本地测试验证网络交互">与本地测试验证网络交互</a></li>
+          </ul>
+        </li>
+        <li><a href="#运行全节点">运行全节点</a>
+          <ul>
+            <li><a href="#硬件需求">硬件需求</a></li>
+            <li><a href="#源码方式">源码方式</a></li>
+            <li><a href="#启动节点-1">启动节点</a></li>
+            <li><a href="#docker方式">Docker方式</a></li>
+            <li><a href="#理解和验证节点正确性">理解和验证节点正确性</a>
+              <ul>
+                <li><a href="#初始同步">初始同步</a>
+                  <ul>
+                    <li><a href="#查询节点同步情况">查询节点同步情况</a></li>
+                    <li><a href="#查看连接数">查看连接数</a></li>
+                    <li><a href="#查看账本数据库大小">查看账本数据库大小</a></li>
+                  </ul>
+                </li>
+                <li><a href="#添加上游种子节点">添加上游种子节点</a></li>
+              </ul>
+            </li>
+            <li><a href="#高级指南">高级指南</a>
+              <ul>
+                <li><a href="#为全节点创建静态id">为全节点创建静态ID</a></li>
+                <li><a href="#用静态网络id启动节点">用静态网络ID启动节点</a></li>
+                <li><a href="#让其他全节点连接到自己的节点">让其他全节点连接到自己的节点</a></li>
+              </ul>
+            </li>
+            <li><a href="#使用最新devnet版本更新全节点">使用最新devnet版本更新全节点</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -2739,7 +2746,8 @@ The epilogue is in part responsible for debiting the execution fee from the subm
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/" class="prev" rel="prev" title="雪崩网络Avax概述"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>雪崩网络Avax概述</a></div>
+    <div class="post-nav"><a href="/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/" class="prev" rel="prev" title="雪崩网络Avax概述"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>雪崩网络Avax概述</a>
+            <a href="/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/" class="next" rel="next" title="NFT的真实使用场景探索">NFT的真实使用场景探索<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

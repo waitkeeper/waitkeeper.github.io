@@ -4,6 +4,14 @@
         <link>https://example.com/posts/</link>
         <description>所有Posts | 学习博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>NFT的真实使用场景探索</title>
+    <link>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
+    <pubDate>Sun, 21 Aug 2022 01:40:32 &#43;0800</pubDate>
+    <author>学习记录者</author>
+    <guid>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
+    <description><![CDATA[NFT 比你想象的更重要，这篇文章对正在构建的 NFT 的真实用例的可视化探索，以及它们未来的用途 炒作周期曲线 不知道大家知道Gartner提出的&quot]]></description>
+</item>
+<item>
     <title>区块链Aptos入门教程</title>
     <link>https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
     <pubDate>Fri, 05 Aug 2022 21:40:32 &#43;0800</pubDate>
@@ -26,14 +34,6 @@
     <author>学习记录者</author>
     <guid>https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0/</guid>
     <description><![CDATA[概述 Avalanche是一个开源平台，用于在一个可互操作、高度可扩展的生态系统中启动去中心化应用程序和企业区块链。Avalanche 是第一个]]></description>
-</item>
-<item>
-    <title>NFT的真实使用场景</title>
-    <link>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
-    <pubDate>Sun, 31 Jul 2022 01:40:32 &#43;0800</pubDate>
-    <author>学习记录者</author>
-    <guid>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
-    <description><![CDATA[NFT的真实使用场景]]></description>
 </item>
 <item>
     <title>以太坊源码分析-状态树</title>
