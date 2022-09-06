@@ -9,7 +9,7 @@ Aptos的目标是建立一个更具可扩展性的区块链，使用Move编程�
 
 > ==A Layer 1 for everyone. Building the safest and most scalable Layer 1 blockchain.==
 
-- 官网：https://aptoslabs.com/
+- 官网：https://aptoslabs.com/~
 - Github：https://github.com/aptos-labs/
 - 开发者网络：https://aptos.dev/
 - REST API：https://fullnode.devnet.aptoslabs.com

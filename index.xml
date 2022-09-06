@@ -3,9 +3,17 @@
         <title>学习博客</title>
         <link>https://example.com/</link>
         <description>Hugo theme - LoveIt</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Aug 2022 01:40:32 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 05 Sep 2022 09:40:32 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Hugo module入门教程</title>
+    <link>https://example.com/posts/base/001-hugo-modules/</link>
+    <pubDate>Mon, 05 Sep 2022 09:40:32 &#43;0800</pubDate>
+    <author>学习记录者</author>
+    <guid>https://example.com/posts/base/001-hugo-modules/</guid>
+    <description><![CDATA[Hugo 0.56.0 就引入了强大的 Module 系统。与其他包解决方案非常相似，它允许将任何 Hugo 项目定义为模块，无论是完整的网站、主题还是组件，都可以使用存储在某个存储库]]></description>
+</item>
+<item>
     <title>NFT的真实使用场景探索</title>
     <link>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
     <pubDate>Sun, 21 Aug 2022 01:40:32 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>学习记录者</author>
     <guid>https://example.com/posts/defi/003%E4%BB%80%E4%B9%88%E6%98%AF%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</guid>
     <description><![CDATA[概述 你是否听说过“代码即法律”？就是用程序来执行规则。 如果真是这样，我们还需要律师吗？ 我们可以生活在一个完全自动化的世界，代码决定了我们能做]]></description>
-</item>
-<item>
-    <title>去中心化金融系统教程</title>
-    <link>https://example.com/posts/defi/001%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/</link>
-    <pubDate>Sat, 06 Mar 2021 21:40:32 &#43;0800</pubDate>
-    <author>学习记录者</author>
-    <guid>https://example.com/posts/defi/001%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[去中心化金融（DeFi）提升指南 如果您想了解去中心化金融 (DeFi)？或者想将 DeFi 提升一个水平？无论您处于 DeFi 的哪个阶段，本系列教程都适合您。 说]]></description>
 </item>
 </channel>
 </rss>
