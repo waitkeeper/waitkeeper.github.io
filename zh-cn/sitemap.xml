@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/posts/base/001-hugo-modules/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://example.com/posts/base/001-hugo-modules/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://example.com/posts/nft/0001-nft%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</loc><lastmod>2022-08-21T01:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/posts/aptos/0001-aptos%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</loc><lastmod>2022-08-05T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/posts/avax/0001-avax%E6%A6%82%E8%BF%B0-copy/</loc><lastmod>2022-08-05T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -122,8 +122,8 @@
                     hreflang="zh-cn"
                     href="https://example.com/posts/theme-documentation-typeit-shortcode/"
                     /></url><url>
-            <loc>https://example.com/tags/hugo/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://example.com/tags/hugo/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/en/tags/"
@@ -132,8 +132,8 @@
                     hreflang="zh-cn"
                     href="https://example.com/tags/"
                     /></url><url>
-            <loc>https://example.com/tags/%E5%B7%A5%E5%85%B7/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://example.com/tags/%E5%B7%A5%E5%85%B7/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2022-09-07T00:25:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/en/"
